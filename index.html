@@ -13,15 +13,17 @@
 <body class="theme-basic">
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="logo">Samuel Filteau-Hubert</a>
+      <a href="index.html" class="logo" data-i18n="site.name">
+        Samuel Filteau-Hubert
+      </a>
 
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="goals.html">Goals</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" class="active" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="goals.html" data-i18n="nav.goals">Goals</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="settings">
@@ -43,19 +45,25 @@
     <section class="hero section">
       <div class="container hero-content">
         <div>
-          <h1>Who am I?</h1>
-          <p>
+          <h1 data-i18n="home.title">Who am I?</h1>
+
+          <p data-i18n="home.intro">
             I am a student interested in web development, programming, databases,
             and interactive projects.
           </p>
 
           <div class="button-group">
-            <a href="projects.html" class="button">View my work</a>
-            <a href="about.html" class="button secondary">About me</a>
+            <a href="projects.html" class="button" data-i18n="home.viewWork">
+              View my work
+            </a>
+
+            <a href="about.html" class="button secondary" data-i18n="home.aboutMe">
+              About me
+            </a>
           </div>
         </div>
 
-        <div class="image-placeholder">
+        <div class="image-placeholder" data-i18n="home.profileImage">
           Profile image
         </div>
       </div>
@@ -63,33 +71,48 @@
 
     <section class="section">
       <div class="container split-section">
-        <h2>Goals</h2>
-        <p>
-          My goal is to continue improving my skills by building practical projects
-          and learning new technologies.
-        </p>
-        <a href="goals.html" class="button secondary">Learn more</a>
+        <div>
+          <h2 data-i18n="home.goalsTitle">Goals</h2>
+
+          <p data-i18n="home.goalsText">
+            My goal is to continue improving my skills by building practical projects
+            and learning new technologies.
+          </p>
+        </div>
+
+        <a href="goals.html" class="button secondary" data-i18n="home.learnMore">
+          Learn more
+        </a>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2>What I do</h2>
+        <h2 data-i18n="home.whatIDoTitle">What I do</h2>
 
         <div class="card-grid">
           <article class="card">
-            <h3>Web Development</h3>
-            <p>HTML, CSS, JavaScript, ASP.NET, and responsive layouts.</p>
+            <h3 data-i18n="home.webDevTitle">Web Development</h3>
+
+            <p data-i18n="home.webDevText">
+              HTML, CSS, JavaScript, ASP.NET, and responsive layouts.
+            </p>
           </article>
 
           <article class="card">
-            <h3>Databases</h3>
-            <p>SQL, database design, stored procedures, and data management.</p>
+            <h3 data-i18n="home.databaseTitle">Databases</h3>
+
+            <p data-i18n="home.databaseText">
+              SQL, database design, stored procedures, and data management.
+            </p>
           </article>
 
           <article class="card">
-            <h3>Interactive Projects</h3>
-            <p>Unity, WebGL, game systems, and interactive visual projects.</p>
+            <h3 data-i18n="home.interactiveTitle">Interactive Projects</h3>
+
+            <p data-i18n="home.interactiveText">
+              Unity, WebGL, game systems, and interactive visual projects.
+            </p>
           </article>
         </div>
       </div>
@@ -97,42 +120,66 @@
 
     <section class="section">
       <div class="container">
-        <h2>Featured Projects</h2>
+        <h2 data-i18n="home.featuredProjects">Featured Projects</h2>
 
         <div class="project-preview-grid">
           <article class="project-card">
-            <div class="project-image">Image</div>
+            <div class="project-image" data-i18n="home.projectImage">
+              Image
+            </div>
+
             <div>
-              <h3>Thesaurus 3D Maze Game</h3>
-              <p>A 3D maze game with levels, teleporters, doors, UI, and scoring.</p>
-              <a href="projects.html">View project →</a>
+              <h3 data-i18n="home.projectOneTitle">Thesaurus 3D Maze Game</h3>
+
+              <p data-i18n="home.projectOneText">
+                A 3D maze game with levels, teleporters, doors, UI, and scoring.
+              </p>
+
+              <a href="projects.html" data-i18n="home.viewProject">
+                View project →
+              </a>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-image">Image</div>
+            <div class="project-image" data-i18n="home.projectImage">
+              Image
+            </div>
+
             <div>
-              <h3>Online CV Website</h3>
-              <p>A personal portfolio website with themes and language settings.</p>
-              <a href="projects.html">View project →</a>
+              <h3 data-i18n="home.projectTwoTitle">Online CV Website</h3>
+
+              <p data-i18n="home.projectTwoText">
+                A personal portfolio website with themes and language settings.
+              </p>
+
+              <a href="projects.html" data-i18n="home.viewProject">
+                View project →
+              </a>
             </div>
           </article>
         </div>
 
-        <a href="projects.html" class="button">View all projects</a>
+        <a href="projects.html" class="button" data-i18n="home.viewAllProjects">
+          View all projects
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>Let’s connect!</p>
+      <p data-i18n="footer.connect">Let’s connect!</p>
+
       <div class="footer-links">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
       </div>
-      <p>© 2026 Samuel Filteau-Hubert</p>
+
+      <p data-i18n="footer.copyright">
+        © 2026 Samuel Filteau-Hubert
+      </p>
     </div>
   </footer>
 </body>

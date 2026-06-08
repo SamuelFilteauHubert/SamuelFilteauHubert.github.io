@@ -13,15 +13,17 @@
 <body class="theme-basic">
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="logo">Samuel Filteau-Hubert</a>
+      <a href="index.html" class="logo" data-i18n="site.name">
+        Samuel Filteau-Hubert
+      </a>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="goals.html">Goals</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" class="active" data-i18n="nav.about">About</a></li>
+        <li><a href="goals.html" data-i18n="nav.goals">Goals</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="settings">
@@ -42,58 +44,73 @@
   <main>
     <section class="section">
       <div class="container">
-        <h1>About Me</h1>
-        <p>Curious mind. Problem solver. Always learning.</p>
+        <h1 data-i18n="about.title">About Me</h1>
+        <p data-i18n="about.subtitle">
+          Curious mind. Problem solver. Always learning.
+        </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container about-intro">
-        <div class="image-placeholder">
+        <div class="image-placeholder" data-i18n="about.profilePhoto">
           Profile photo
         </div>
 
         <div>
-          <h2>Hi, I’m Samuel.</h2>
-          <p>
+          <h2 data-i18n="about.introTitle">Hi, I’m Samuel.</h2>
+
+          <p data-i18n="about.introText">
             I am interested in programming, web development, databases, and
             interactive projects. I enjoy building projects that combine logic,
             design, and problem solving.
           </p>
 
           <ul class="quick-list">
-            <li>Based in Canada</li>
-            <li>Interested in web and software development</li>
-            <li>Always learning new technologies</li>
+            <li data-i18n="about.factOne">Based in Canada</li>
+            <li data-i18n="about.factTwo">Interested in web and software development</li>
+            <li data-i18n="about.factThree">Always learning new technologies</li>
           </ul>
         </div>
 
         <div class="snapshot-grid">
-          <div class="small-placeholder">Photo</div>
-          <div class="small-placeholder">Photo</div>
-          <div class="small-placeholder">Photo</div>
+          <div class="small-placeholder" data-i18n="about.photo">Photo</div>
+          <div class="small-placeholder" data-i18n="about.photo">Photo</div>
+          <div class="small-placeholder" data-i18n="about.photo">Photo</div>
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container">
-        <h2>Background / Education</h2>
+        <h2 data-i18n="about.backgroundTitle">Background / Education</h2>
 
         <div class="timeline">
           <article class="timeline-item">
-            <span>2024 - Now</span>
+            <span data-i18n="about.timelineOneDate">2024 - Now</span>
+
             <div>
-              <h3>Computer Science / Programming</h3>
-              <p>Learning web development, databases, software development, and interactive programming.</p>
+              <h3 data-i18n="about.timelineOneTitle">
+                Computer Science / Programming
+              </h3>
+
+              <p data-i18n="about.timelineOneText">
+                Learning web development, databases, software development, and interactive programming.
+              </p>
             </div>
           </article>
 
           <article class="timeline-item">
-            <span>Projects</span>
+            <span data-i18n="about.timelineTwoDate">Projects</span>
+
             <div>
-              <h3>Personal and School Projects</h3>
-              <p>Building websites, database applications, games, and interactive visual projects.</p>
+              <h3 data-i18n="about.timelineTwoTitle">
+                Personal and School Projects
+              </h3>
+
+              <p data-i18n="about.timelineTwoText">
+                Building websites, database applications, games, and interactive visual projects.
+              </p>
             </div>
           </article>
         </div>
@@ -103,39 +120,54 @@
     <section class="section">
       <div class="container card-grid">
         <article class="card">
-          <h3>Interests</h3>
-          <p>Web development, games, technology, and creative projects.</p>
+          <h3 data-i18n="about.interestsTitle">Interests</h3>
+          <p data-i18n="about.interestsText">
+            Web development, games, technology, and creative projects.
+          </p>
         </article>
 
         <article class="card">
-          <h3>Values</h3>
-          <p>Curiosity, improvement, creativity, and problem solving.</p>
+          <h3 data-i18n="about.valuesTitle">Values</h3>
+          <p data-i18n="about.valuesText">
+            Curiosity, improvement, creativity, and problem solving.
+          </p>
         </article>
 
         <article class="card">
-          <h3>Quick Facts</h3>
-          <p>I like learning by building real projects and improving them over time.</p>
+          <h3 data-i18n="about.quickFactsTitle">Quick Facts</h3>
+          <p data-i18n="about.quickFactsText">
+            I like learning by building real projects and improving them over time.
+          </p>
         </article>
       </div>
     </section>
 
     <section class="section">
       <div class="container button-group">
-        <a href="assets/files/cv.pdf" class="button">Download CV</a>
-        <a href="projects.html" class="button secondary">See my projects</a>
+        <a href="assets/files/cv.pdf" class="button" data-i18n="about.downloadCv">
+          Download CV
+        </a>
+
+        <a href="projects.html" class="button secondary" data-i18n="about.seeProjects">
+          See my projects
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>Let’s connect!</p>
+      <p data-i18n="footer.connect">Let’s connect!</p>
+
       <div class="footer-links">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
       </div>
-      <p>© 2026 Samuel Filteau-Hubert</p>
+
+      <p data-i18n="footer.copyright">
+        © 2026 Samuel Filteau-Hubert
+      </p>
     </div>
   </footer>
 </body>

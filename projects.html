@@ -13,15 +13,17 @@
 <body class="theme-basic">
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="logo">Samuel Filteau-Hubert</a>
+      <a href="index.html" class="logo" data-i18n="site.name">
+        Samuel Filteau-Hubert
+      </a>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="goals.html">Goals</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="goals.html" data-i18n="nav.goals">Goals</a></li>
+        <li><a href="projects.html" class="active" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="settings">
@@ -42,8 +44,9 @@
   <main>
     <section class="section">
       <div class="container">
-        <h1>Projects</h1>
-        <p>
+        <h1 data-i18n="projects.title">Projects</h1>
+
+        <p data-i18n="projects.intro">
           Here are some of the projects I have worked on, including web development,
           databases, games, and interactive programming.
         </p>
@@ -52,16 +55,17 @@
 
     <section class="section">
       <div class="container">
-        <h2>Featured Project</h2>
+        <h2 data-i18n="projects.featuredTitle">Featured Project</h2>
 
         <article class="featured-project">
-          <div class="image-placeholder">
+          <div class="image-placeholder" data-i18n="projects.projectImage">
             Project image
           </div>
 
           <div>
-            <h3>Thesaurus 3D Maze Game</h3>
-            <p>
+            <h3 data-i18n="projects.thesaurusTitle">Thesaurus 3D Maze Game</h3>
+
+            <p data-i18n="projects.thesaurusText">
               A 3D maze game where the player explores levels, uses teleporters,
               opens doors, avoids obstacles, and progresses through multiple stages.
             </p>
@@ -69,11 +73,11 @@
             <div class="tag-list">
               <span>Unity</span>
               <span>C#</span>
-              <span>Game Design</span>
+              <span data-i18n="projects.tagGameDesign">Game Design</span>
             </div>
 
             <div class="button-group">
-              <a href="#" class="button">View project</a>
+              <a href="#" class="button" data-i18n="projects.viewProject">View project</a>
               <a href="#" class="button secondary">GitHub</a>
             </div>
           </div>
@@ -83,11 +87,12 @@
 
     <section class="project-section section">
       <div class="container project-layout">
-        <div class="project-image">Image</div>
+        <div class="project-image" data-i18n="projects.image">Image</div>
 
         <div>
-          <h2>Online Profile Website</h2>
-          <p>
+          <h2 data-i18n="projects.portfolioTitle">Online Profile Website</h2>
+
+          <p data-i18n="projects.portfolioText">
             A personal portfolio website that acts as an online CV. It includes
             multiple pages, theme settings, language settings, and project sections.
           </p>
@@ -99,7 +104,7 @@
           </div>
 
           <div class="button-group">
-            <a href="#" class="button">View project</a>
+            <a href="#" class="button" data-i18n="projects.viewProject">View project</a>
             <a href="#" class="button secondary">GitHub</a>
           </div>
         </div>
@@ -108,11 +113,12 @@
 
     <section class="project-section section">
       <div class="container project-layout reverse">
-        <div class="project-image">Image</div>
+        <div class="project-image" data-i18n="projects.image">Image</div>
 
         <div>
-          <h2>ASP.NET Movie Rental Project</h2>
-          <p>
+          <h2 data-i18n="projects.movieTitle">ASP.NET Movie Rental Project</h2>
+
+          <p data-i18n="projects.movieText">
             A web application based on a movie rental system, using models,
             controllers, database relationships, authentication, and user features.
           </p>
@@ -124,7 +130,7 @@
           </div>
 
           <div class="button-group">
-            <a href="#" class="button">View project</a>
+            <a href="#" class="button" data-i18n="projects.viewProject">View project</a>
             <a href="#" class="button secondary">GitHub</a>
           </div>
         </div>
@@ -133,11 +139,12 @@
 
     <section class="project-section section">
       <div class="container project-layout">
-        <div class="project-image">Image</div>
+        <div class="project-image" data-i18n="projects.image">Image</div>
 
         <div>
-          <h2>JavaScript Canvas Flags</h2>
-          <p>
+          <h2 data-i18n="projects.flagsTitle">JavaScript Canvas Flags</h2>
+
+          <p data-i18n="projects.flagsText">
             A collection of country flags drawn using JavaScript Canvas, focusing
             on shapes, coordinates, colors, and visual precision.
           </p>
@@ -145,11 +152,11 @@
           <div class="tag-list">
             <span>JavaScript</span>
             <span>Canvas</span>
-            <span>2D Graphics</span>
+            <span data-i18n="projects.tagGraphics">2D Graphics</span>
           </div>
 
           <div class="button-group">
-            <a href="#" class="button">View project</a>
+            <a href="#" class="button" data-i18n="projects.viewProject">View project</a>
             <a href="#" class="button secondary">GitHub</a>
           </div>
         </div>
@@ -158,11 +165,12 @@
 
     <section class="project-section section">
       <div class="container project-layout reverse">
-        <div class="project-image">Image</div>
+        <div class="project-image" data-i18n="projects.image">Image</div>
 
         <div>
-          <h2>Discord Music Bot</h2>
-          <p>
+          <h2 data-i18n="projects.discordTitle">Discord Music Bot</h2>
+
+          <p data-i18n="projects.discordText">
             A Discord bot project made to play music and manage a queue using
             commands and external music sources.
           </p>
@@ -174,7 +182,7 @@
           </div>
 
           <div class="button-group">
-            <a href="#" class="button">View project</a>
+            <a href="#" class="button" data-i18n="projects.viewProject">View project</a>
             <a href="#" class="button secondary">GitHub</a>
           </div>
         </div>
@@ -184,13 +192,17 @@
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>Let’s connect!</p>
+      <p data-i18n="footer.connect">Let’s connect!</p>
+
       <div class="footer-links">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
       </div>
-      <p>© 2026 Samuel Filteau-Hubert</p>
+
+      <p data-i18n="footer.copyright">
+        © 2026 Samuel Filteau-Hubert
+      </p>
     </div>
   </footer>
 </body>

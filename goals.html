@@ -13,15 +13,17 @@
 <body class="theme-basic">
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="logo">Samuel Filteau-Hubert</a>
+      <a href="index.html" class="logo" data-i18n="site.name">
+        Samuel Filteau-Hubert
+      </a>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="goals.html" class="active">Goals</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="goals.html" class="active" data-i18n="nav.goals">Goals</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="settings">
@@ -43,14 +45,15 @@
     <section class="section">
       <div class="container hero-content">
         <div>
-          <h1>My Goals</h1>
-          <p>
+          <h1 data-i18n="goals.title">My Goals</h1>
+
+          <p data-i18n="goals.intro">
             I want to keep improving as a developer by building practical projects,
             learning new technologies, and developing stronger problem-solving skills.
           </p>
         </div>
 
-        <div class="image-placeholder">
+        <div class="image-placeholder" data-i18n="goals.image">
           Goals image
         </div>
       </div>
@@ -59,29 +62,32 @@
     <section class="section">
       <div class="container goal-grid">
         <article class="card">
-          <h2>Short-Term Goals</h2>
+          <h2 data-i18n="goals.shortTitle">Short-Term Goals</h2>
+
           <ul>
-            <li>Finish the first version of this portfolio website.</li>
-            <li>Add real project images and GitHub links.</li>
-            <li>Improve my HTML, CSS, and JavaScript skills.</li>
+            <li data-i18n="goals.shortOne">Finish the first version of this portfolio website.</li>
+            <li data-i18n="goals.shortTwo">Add real project images and GitHub links.</li>
+            <li data-i18n="goals.shortThree">Improve my HTML, CSS, and JavaScript skills.</li>
           </ul>
         </article>
 
         <article class="card">
-          <h2>Long-Term Goals</h2>
+          <h2 data-i18n="goals.longTitle">Long-Term Goals</h2>
+
           <ul>
-            <li>Become more confident with full-stack development.</li>
-            <li>Build larger and more complete projects.</li>
-            <li>Improve my ability to write clean and maintainable code.</li>
+            <li data-i18n="goals.longOne">Become more confident with full-stack development.</li>
+            <li data-i18n="goals.longTwo">Build larger and more complete projects.</li>
+            <li data-i18n="goals.longThree">Improve my ability to write clean and maintainable code.</li>
           </ul>
         </article>
 
         <article class="card">
-          <h2>What I’m Working On Now</h2>
+          <h2 data-i18n="goals.currentTitle">What I’m Working On Now</h2>
+
           <ul>
-            <li>Creating my online profile website.</li>
-            <li>Organizing my projects for GitHub.</li>
-            <li>Learning how to make a better user experience.</li>
+            <li data-i18n="goals.currentOne">Creating my online profile website.</li>
+            <li data-i18n="goals.currentTwo">Organizing my projects for GitHub.</li>
+            <li data-i18n="goals.currentThree">Learning how to make a better user experience.</li>
           </ul>
         </article>
       </div>
@@ -89,31 +95,39 @@
 
     <section class="section">
       <div class="container">
-        <h2>Goals Roadmap</h2>
+        <h2 data-i18n="goals.roadmapTitle">Goals Roadmap</h2>
 
         <div class="roadmap">
           <article class="roadmap-step">
             <span class="step-number">1</span>
-            <h3>Foundation</h3>
-            <p>Build the basic pages, navigation, structure, and layout.</p>
+            <h3 data-i18n="goals.stepOneTitle">Foundation</h3>
+            <p data-i18n="goals.stepOneText">
+              Build the basic pages, navigation, structure, and layout.
+            </p>
           </article>
 
           <article class="roadmap-step">
             <span class="step-number">2</span>
-            <h3>Content</h3>
-            <p>Add personal information, project descriptions, skills, and goals.</p>
+            <h3 data-i18n="goals.stepTwoTitle">Content</h3>
+            <p data-i18n="goals.stepTwoText">
+              Add personal information, project descriptions, skills, and goals.
+            </p>
           </article>
 
           <article class="roadmap-step">
             <span class="step-number">3</span>
-            <h3>Design</h3>
-            <p>Improve the visual style, spacing, colors, and responsiveness.</p>
+            <h3 data-i18n="goals.stepThreeTitle">Design</h3>
+            <p data-i18n="goals.stepThreeText">
+              Improve the visual style, spacing, colors, and responsiveness.
+            </p>
           </article>
 
           <article class="roadmap-step">
             <span class="step-number">4</span>
-            <h3>Publish</h3>
-            <p>Host the website using GitHub Pages and keep improving it.</p>
+            <h3 data-i18n="goals.stepFourTitle">Publish</h3>
+            <p data-i18n="goals.stepFourText">
+              Host the website using GitHub Pages and keep improving it.
+            </p>
           </article>
         </div>
       </div>
@@ -122,28 +136,35 @@
     <section class="section">
       <div class="container split-section">
         <div>
-          <h2>Why these goals matter</h2>
-          <p>
+          <h2 data-i18n="goals.whyTitle">Why these goals matter</h2>
+
+          <p data-i18n="goals.whyText">
             These goals help me stay focused and give me a clear path for improving
             my technical skills. By building real projects, I can learn more
             effectively and show what I am capable of creating.
           </p>
         </div>
 
-        <a href="projects.html" class="button">View my projects</a>
+        <a href="projects.html" class="button" data-i18n="goals.viewProjects">
+          View my projects
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>Let’s connect!</p>
+      <p data-i18n="footer.connect">Let’s connect!</p>
+
       <div class="footer-links">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
       </div>
-      <p>© 2026 Samuel Filteau-Hubert</p>
+
+      <p data-i18n="footer.copyright">
+        © 2026 Samuel Filteau-Hubert
+      </p>
     </div>
   </footer>
 </body>

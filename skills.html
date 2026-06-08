@@ -13,15 +13,17 @@
 <body class="theme-basic">
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="logo">Samuel Filteau-Hubert</a>
+      <a href="index.html" class="logo" data-i18n="site.name">
+        Samuel Filteau-Hubert
+      </a>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="goals.html">Goals</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html" class="active">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="goals.html" data-i18n="nav.goals">Goals</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="skills.html" class="active" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="settings">
@@ -43,14 +45,15 @@
     <section class="section">
       <div class="container hero-content">
         <div>
-          <h1>Skills & Experience</h1>
-          <p>
+          <h1 data-i18n="skills.title">Skills & Experience</h1>
+
+          <p data-i18n="skills.intro">
             Here are the main technologies, tools, and concepts I have worked with
             through school projects, personal projects, and practice.
           </p>
         </div>
 
-        <div class="image-placeholder">
+        <div class="image-placeholder" data-i18n="skills.image">
           Skills image
         </div>
       </div>
@@ -58,11 +61,12 @@
 
     <section class="section">
       <div class="container">
-        <h2>My Skills</h2>
+        <h2 data-i18n="skills.mySkillsTitle">My Skills</h2>
 
         <div class="skills-grid">
           <article class="card">
-            <h3>Programming Languages</h3>
+            <h3 data-i18n="skills.languagesTitle">Programming Languages</h3>
+
             <ul class="skill-list">
               <li>HTML</li>
               <li>CSS</li>
@@ -73,29 +77,32 @@
           </article>
 
           <article class="card">
-            <h3>Web Development</h3>
+            <h3 data-i18n="skills.webTitle">Web Development</h3>
+
             <ul class="skill-list">
-              <li>Responsive layouts</li>
-              <li>Multi-page websites</li>
-              <li>Forms and navigation</li>
+              <li data-i18n="skills.webOne">Responsive layouts</li>
+              <li data-i18n="skills.webTwo">Multi-page websites</li>
+              <li data-i18n="skills.webThree">Forms and navigation</li>
               <li>ASP.NET MVC</li>
-              <li>Razor pages</li>
+              <li>Razor Pages</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Databases</h3>
+            <h3 data-i18n="skills.databaseTitle">Databases</h3>
+
             <ul class="skill-list">
               <li>SQL Server</li>
-              <li>Database design</li>
-              <li>Stored procedures</li>
-              <li>Triggers</li>
+              <li data-i18n="skills.databaseOne">Database design</li>
+              <li data-i18n="skills.databaseTwo">Stored procedures</li>
+              <li data-i18n="skills.databaseThree">Triggers</li>
               <li>Entity Framework</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Tools & Technologies</h3>
+            <h3 data-i18n="skills.toolsTitle">Tools & Technologies</h3>
+
             <ul class="skill-list">
               <li>Git & GitHub</li>
               <li>Visual Studio</li>
@@ -111,14 +118,16 @@
     <section class="section">
       <div class="container experience-layout">
         <div>
-          <h2>Experience & Education</h2>
+          <h2 data-i18n="skills.experienceTitle">Experience & Education</h2>
 
           <div class="timeline">
             <article class="timeline-item">
-              <span>School Projects</span>
+              <span data-i18n="skills.timelineOneDate">School Projects</span>
+
               <div>
-                <h3>Programming and Web Development</h3>
-                <p>
+                <h3 data-i18n="skills.timelineOneTitle">Programming and Web Development</h3>
+
+                <p data-i18n="skills.timelineOneText">
                   Built projects using HTML, CSS, JavaScript, C#, SQL, ASP.NET,
                   Unity, Canvas, and WebGL.
                 </p>
@@ -127,9 +136,11 @@
 
             <article class="timeline-item">
               <span>GitHub</span>
+
               <div>
-                <h3>Version Control</h3>
-                <p>
+                <h3 data-i18n="skills.timelineTwoTitle">Version Control</h3>
+
+                <p data-i18n="skills.timelineTwoText">
                   Using Git and GitHub to organize projects, track changes,
                   and prepare work for publishing online.
                 </p>
@@ -137,10 +148,12 @@
             </article>
 
             <article class="timeline-item">
-              <span>Personal Work</span>
+              <span data-i18n="skills.timelineThreeDate">Personal Work</span>
+
               <div>
-                <h3>Independent Projects</h3>
-                <p>
+                <h3 data-i18n="skills.timelineThreeTitle">Independent Projects</h3>
+
+                <p data-i18n="skills.timelineThreeText">
                   Creating projects outside of class to improve my skills and
                   build a stronger portfolio.
                 </p>
@@ -150,21 +163,27 @@
         </div>
 
         <aside class="side-panel">
-          <h2>Key Strengths</h2>
+          <h2 data-i18n="skills.strengthsTitle">Key Strengths</h2>
 
           <article class="mini-card">
-            <h3>Problem Solving</h3>
-            <p>I like breaking problems into smaller steps and finding practical solutions.</p>
+            <h3 data-i18n="skills.strengthOneTitle">Problem Solving</h3>
+            <p data-i18n="skills.strengthOneText">
+              I like breaking problems into smaller steps and finding practical solutions.
+            </p>
           </article>
 
           <article class="mini-card">
-            <h3>Learning by Building</h3>
-            <p>I improve by creating real projects and refining them over time.</p>
+            <h3 data-i18n="skills.strengthTwoTitle">Learning by Building</h3>
+            <p data-i18n="skills.strengthTwoText">
+              I improve by creating real projects and refining them over time.
+            </p>
           </article>
 
           <article class="mini-card">
-            <h3>Attention to Detail</h3>
-            <p>I care about structure, organization, and making projects work properly.</p>
+            <h3 data-i18n="skills.strengthThreeTitle">Attention to Detail</h3>
+            <p data-i18n="skills.strengthThreeText">
+              I care about structure, organization, and making projects work properly.
+            </p>
           </article>
         </aside>
       </div>
@@ -173,27 +192,34 @@
     <section class="section">
       <div class="container split-section">
         <div>
-          <h2>Want to see these skills in action?</h2>
-          <p>
+          <h2 data-i18n="skills.ctaTitle">Want to see these skills in action?</h2>
+
+          <p data-i18n="skills.ctaText">
             My projects page shows examples of how I use these technologies in
             real work.
           </p>
         </div>
 
-        <a href="projects.html" class="button">View my projects</a>
+        <a href="projects.html" class="button" data-i18n="skills.viewProjects">
+          View my projects
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>Let’s connect!</p>
+      <p data-i18n="footer.connect">Let’s connect!</p>
+
       <div class="footer-links">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
       </div>
-      <p>© 2026 Samuel Filteau-Hubert</p>
+
+      <p data-i18n="footer.copyright">
+        © 2026 Samuel Filteau-Hubert
+      </p>
     </div>
   </footer>
 </body>

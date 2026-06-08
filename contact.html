@@ -13,15 +13,17 @@
 <body class="theme-basic">
   <header class="site-header">
     <nav class="navbar">
-      <a href="index.html" class="logo">Samuel Filteau-Hubert</a>
+      <a href="index.html" class="logo" data-i18n="site.name">
+        Samuel Filteau-Hubert
+      </a>
 
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="goals.html">Goals</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-i18n="nav.about">About</a></li>
+        <li><a href="goals.html" data-i18n="nav.goals">Goals</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="skills.html" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="contact.html" class="active" data-i18n="nav.contact">Contact</a></li>
       </ul>
 
       <div class="settings">
@@ -43,14 +45,15 @@
     <section class="section">
       <div class="container hero-content">
         <div>
-          <h1>Contact Me</h1>
-          <p>
+          <h1 data-i18n="contact.title">Contact Me</h1>
+
+          <p data-i18n="contact.intro">
             Feel free to contact me if you want to discuss a project, ask a question,
             or connect professionally.
           </p>
         </div>
 
-        <div class="image-placeholder">
+        <div class="image-placeholder" data-i18n="contact.image">
           Contact image
         </div>
       </div>
@@ -59,47 +62,81 @@
     <section class="section">
       <div class="container contact-layout">
         <form class="contact-form">
-          <h2>Send me a message</h2>
+          <h2 data-i18n="contact.formTitle">Send me a message</h2>
 
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name" />
+          <label for="name" data-i18n="contact.nameLabel">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            data-i18n-placeholder="contact.namePlaceholder"
+          />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="your.email@example.com" />
+          <label for="email" data-i18n="contact.emailLabel">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your.email@example.com"
+            data-i18n-placeholder="contact.emailPlaceholder"
+          />
 
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" placeholder="Message subject" />
+          <label for="subject" data-i18n="contact.subjectLabel">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Message subject"
+            data-i18n-placeholder="contact.subjectPlaceholder"
+          />
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" placeholder="Write your message here"></textarea>
+          <label for="message" data-i18n="contact.messageLabel">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Write your message here"
+            data-i18n-placeholder="contact.messagePlaceholder"
+          ></textarea>
 
-          <button type="submit" class="button">Send message</button>
+          <button type="submit" class="button" data-i18n="contact.sendButton">
+            Send message
+          </button>
         </form>
 
         <aside class="contact-info">
-          <h2>Get in touch</h2>
+          <h2 data-i18n="contact.getInTouchTitle">Get in touch</h2>
 
           <article class="contact-card">
-            <h3>Email</h3>
+            <h3 data-i18n="contact.emailTitle">Email</h3>
             <p>your.email@example.com</p>
           </article>
 
           <article class="contact-card">
             <h3>GitHub</h3>
-            <p>Add your GitHub profile link here.</p>
-            <a href="#">View GitHub →</a>
+            <p data-i18n="contact.githubText">
+              Add your GitHub profile link here.
+            </p>
+            <a href="#" data-i18n="contact.viewGithub">View GitHub →</a>
           </article>
 
           <article class="contact-card">
             <h3>LinkedIn</h3>
-            <p>Add your LinkedIn profile link here.</p>
-            <a href="#">View LinkedIn →</a>
+            <p data-i18n="contact.linkedinText">
+              Add your LinkedIn profile link here.
+            </p>
+            <a href="#" data-i18n="contact.viewLinkedin">View LinkedIn →</a>
           </article>
 
           <article class="contact-card">
-            <h3>CV</h3>
-            <p>Download a PDF version of my CV.</p>
-            <a href="assets/files/cv.pdf">Download CV →</a>
+            <h3 data-i18n="contact.cvTitle">CV</h3>
+            <p data-i18n="contact.cvText">
+              Download a PDF version of my CV.
+            </p>
+            <a href="assets/files/cv.pdf" data-i18n="contact.downloadCv">
+              Download CV →
+            </a>
           </article>
         </aside>
       </div>
@@ -108,27 +145,34 @@
     <section class="section">
       <div class="container split-section">
         <div>
-          <h2>Availability</h2>
-          <p>
+          <h2 data-i18n="contact.availabilityTitle">Availability</h2>
+
+          <p data-i18n="contact.availabilityText">
             I am open to discussing projects, collaboration opportunities, and
             professional connections.
           </p>
         </div>
 
-        <a href="projects.html" class="button secondary">View my projects</a>
+        <a href="projects.html" class="button secondary" data-i18n="contact.viewProjects">
+          View my projects
+        </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-content">
-      <p>Let’s connect!</p>
+      <p data-i18n="footer.connect">Let’s connect!</p>
+
       <div class="footer-links">
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" data-i18n="nav.contact">Contact</a>
         <a href="#">GitHub</a>
         <a href="#">LinkedIn</a>
       </div>
-      <p>© 2026 Samuel Filteau-Hubert</p>
+
+      <p data-i18n="footer.copyright">
+        © 2026 Samuel Filteau-Hubert
+      </p>
     </div>
   </footer>
 </body>
