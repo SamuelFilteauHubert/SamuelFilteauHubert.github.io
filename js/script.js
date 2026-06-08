@@ -151,9 +151,9 @@ const translations = {
     "contact.sendButton": "Send message",
     "contact.getInTouchTitle": "Get in touch",
     "contact.emailTitle": "Email",
-    "contact.githubText": "Add your GitHub profile link here.",
+    "contact.githubText": "View my GitHub profile and repositories.",
     "contact.viewGithub": "View GitHub →",
-    "contact.linkedinText": "Add your LinkedIn profile link here.",
+    "contact.linkedinText": "Connect with me on LinkedIn.",
     "contact.viewLinkedin": "View LinkedIn →",
     "contact.cvTitle": "CV",
     "contact.cvText": "Download a PDF version of my CV.",
@@ -161,6 +161,12 @@ const translations = {
     "contact.availabilityTitle": "Availability",
     "contact.availabilityText": "I am open to discussing projects, collaboration opportunities, and professional connections.",
     "contact.viewProjects": "View my projects",
+
+    "cvModal.title": "Choose a CV version",
+    "cvModal.text": "Which version of my CV would you like to download?",
+    "cvModal.english": "English CV",
+    "cvModal.french": "French CV",
+    "cvModal.bilingual": "French & English CV",
 
     "footer.connect": "Let’s connect!",
   },
@@ -314,9 +320,9 @@ const translations = {
     "contact.sendButton": "Envoyer le message",
     "contact.getInTouchTitle": "Me joindre",
     "contact.emailTitle": "Courriel",
-    "contact.githubText": "Ajoutez ici le lien vers votre profil GitHub.",
+    "contact.githubText": "Consultez mon profil GitHub et mes dépôts.",
     "contact.viewGithub": "Voir GitHub →",
-    "contact.linkedinText": "Ajoutez ici le lien vers votre profil LinkedIn.",
+    "contact.linkedinText": "Connectez-vous avec moi sur LinkedIn.",
     "contact.viewLinkedin": "Voir LinkedIn →",
     "contact.cvTitle": "CV",
     "contact.cvText": "Télécharger une version PDF de mon CV.",
@@ -324,6 +330,12 @@ const translations = {
     "contact.availabilityTitle": "Disponibilité",
     "contact.availabilityText": "Je suis ouvert à discuter de projets, d’occasions de collaboration et de contacts professionnels.",
     "contact.viewProjects": "Voir mes projets",
+
+    "cvModal.title": "Choisir une version du CV",
+    "cvModal.text": "Quelle version de mon CV souhaitez-vous télécharger?",
+    "cvModal.english": "CV anglais",
+    "cvModal.french": "CV français",
+    "cvModal.bilingual": "CV français et anglais",
 
     "footer.connect": "Restons en contact!"
   }
@@ -385,3 +397,43 @@ if (languageSelect) {
     localStorage.setItem("language", selectedLanguage);
   });
 }
+
+const cvModal = document.getElementById("cv-modal");
+const openCvModalButton = document.getElementById("open-cv-modal");
+const closeCvModalButton = document.getElementById("close-cv-modal");
+
+function openCvModal() {
+  if (!cvModal) return;
+
+  cvModal.classList.add("open");
+  cvModal.setAttribute("aria-hidden", "false");
+}
+
+function closeCvModal() {
+  if (!cvModal) return;
+
+  cvModal.classList.remove("open");
+  cvModal.setAttribute("aria-hidden", "true");
+}
+
+if (openCvModalButton) {
+  openCvModalButton.addEventListener("click", openCvModal);
+}
+
+if (closeCvModalButton) {
+  closeCvModalButton.addEventListener("click", closeCvModal);
+}
+
+if (cvModal) {
+  cvModal.addEventListener("click", (event) => {
+    if (event.target === cvModal) {
+      closeCvModal();
+    }
+  });
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeCvModal();
+  }
+});

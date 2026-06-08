@@ -144,9 +144,9 @@
 
     <section class="section">
       <div class="container button-group">
-        <a href="assets/files/cv.pdf" class="button" data-i18n="about.downloadCv">
+        <button type="button" class="button" id="open-cv-modal" data-i18n="about.downloadCv">
           Download CV
-        </a>
+        </button>
 
         <a href="projects.html" class="button secondary" data-i18n="about.seeProjects">
           See my projects
@@ -161,8 +161,8 @@
 
       <div class="footer-links">
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
+        <a href="https://github.com/SamuelFilteauHubert" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/s-filteauhubert/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
 
       <p data-i18n="footer.copyright">
@@ -170,5 +170,49 @@
       </p>
     </div>
   </footer>
+    <div class="modal-overlay" id="cv-modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-labelledby="cv-modal-title">
+      <button type="button" class="modal-close" id="close-cv-modal" aria-label="Close">
+        ×
+      </button>
+
+      <h2 id="cv-modal-title" data-i18n="cvModal.title">
+        Choose a CV version
+      </h2>
+
+      <p data-i18n="cvModal.text">
+        Which version of my CV would you like to download?
+      </p>
+
+      <div class="cv-options">
+        <a
+          href="assets/files/cv-samfh-2026-eng.pdf"
+          class="button"
+          download
+          data-i18n="cvModal.english"
+        >
+          English CV
+        </a>
+
+        <a
+          href="assets/files/cv-samfh-2026-fr.pdf"
+          class="button secondary"
+          download
+          data-i18n="cvModal.french"
+        >
+          French CV
+        </a>
+
+        <a
+          href="assets/files/cv-samfh-2026-fr-eng.pdf"
+          class="button secondary"
+          download
+          data-i18n="cvModal.bilingual"
+        >
+          French & English CV
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

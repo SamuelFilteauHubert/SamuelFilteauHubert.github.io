@@ -110,23 +110,41 @@
 
           <article class="contact-card">
             <h3 data-i18n="contact.emailTitle">Email</h3>
-            <p>your.email@example.com</p>
+            <p>
+              <a href="mailto:samuelfilteauhubert@gmail.com">
+                samuelfilteauhubert@gmail.com
+              </a>
+            </p>
           </article>
 
           <article class="contact-card">
             <h3>GitHub</h3>
             <p data-i18n="contact.githubText">
-              Add your GitHub profile link here.
+              View my GitHub profile and repositories.
             </p>
-            <a href="#" data-i18n="contact.viewGithub">View GitHub →</a>
+            <a
+              href="https://github.com/SamuelFilteauHubert"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="contact.viewGithub"
+            >
+              View GitHub →
+            </a>
           </article>
 
           <article class="contact-card">
             <h3>LinkedIn</h3>
             <p data-i18n="contact.linkedinText">
-              Add your LinkedIn profile link here.
+              Connect with me on LinkedIn.
             </p>
-            <a href="#" data-i18n="contact.viewLinkedin">View LinkedIn →</a>
+            <a
+              href="https://www.linkedin.com/in/s-filteauhubert/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="contact.viewLinkedin"
+            >
+              View LinkedIn →
+            </a>
           </article>
 
           <article class="contact-card">
@@ -134,9 +152,15 @@
             <p data-i18n="contact.cvText">
               Download a PDF version of my CV.
             </p>
-            <a href="assets/files/cv.pdf" data-i18n="contact.downloadCv">
+
+            <button
+              type="button"
+              class="text-button"
+              id="open-cv-modal"
+              data-i18n="contact.downloadCv"
+            >
               Download CV →
-            </a>
+            </button>
           </article>
         </aside>
       </div>
@@ -166,8 +190,20 @@
 
       <div class="footer-links">
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
+        <a
+          href="https://github.com/SamuelFilteauHubert"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/s-filteauhubert/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
       </div>
 
       <p data-i18n="footer.copyright">
@@ -175,5 +211,50 @@
       </p>
     </div>
   </footer>
+
+  <div class="modal-overlay" id="cv-modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-labelledby="cv-modal-title">
+      <button type="button" class="modal-close" id="close-cv-modal" aria-label="Close">
+        ×
+      </button>
+
+      <h2 id="cv-modal-title" data-i18n="cvModal.title">
+        Choose a CV version
+      </h2>
+
+      <p data-i18n="cvModal.text">
+        Which version of my CV would you like to download?
+      </p>
+
+      <div class="cv-options">
+        <a
+          href="assets/files/cv-samfh-2026-eng.pdf"
+          class="button"
+          download
+          data-i18n="cvModal.english"
+        >
+          English CV
+        </a>
+
+        <a
+          href="assets/files/cv-samfh-2026-fr.pdf"
+          class="button secondary"
+          download
+          data-i18n="cvModal.french"
+        >
+          French CV
+        </a>
+
+        <a
+          href="assets/files/cv-samfh-2026-fr-eng.pdf"
+          class="button secondary"
+          download
+          data-i18n="cvModal.bilingual"
+        >
+          French & English CV
+        </a>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
