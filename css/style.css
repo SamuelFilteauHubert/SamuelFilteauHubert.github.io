@@ -240,3 +240,50 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+
+.featured-project,
+.project-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project-layout.reverse {
+  grid-template-columns: 1.4fr 1fr;
+}
+
+.project-layout.reverse .project-image {
+  order: 2;
+}
+
+.project-section:nth-of-type(even) {
+  background-color: var(--card-color);
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-list span {
+  display: inline-block;
+  padding: 0.4rem 0.7rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-color);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 800px) {
+  .featured-project,
+  .project-layout,
+  .project-layout.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .project-layout.reverse .project-image {
+    order: 0;
+  }
+}
