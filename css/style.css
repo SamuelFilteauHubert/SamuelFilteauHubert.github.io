@@ -636,3 +636,36 @@ body.theme-beige .button.secondary:hover {
   opacity: 0.75;
   text-decoration: underline;
 }
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  background-color: var(--card-color);
+  padding: 1.5rem;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 1000px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
