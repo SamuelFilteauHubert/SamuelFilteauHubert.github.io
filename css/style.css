@@ -578,3 +578,61 @@ h2 {
   text-align: center;
   line-height: 1.2;
 }
+
+.view-all-projects-button {
+  margin-top: 1.5rem;
+}
+
+.button {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
+
+.button.secondary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+body.theme-blue .button.secondary:hover {
+  background-color: #7ab8ff;
+  border-color: #7ab8ff;
+  color: #0b1220;
+}
+
+body.theme-beige .button.secondary:hover {
+  background-color: #7a4f2a;
+  border-color: #7a4f2a;
+  color: #fff7e8;
+}
+
+.text-button {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.text-button:hover {
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+
+.project-card a,
+.contact-card a,
+.footer-links a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.project-card a:hover,
+.contact-card a:hover,
+.footer-links a:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+}
