@@ -30,6 +30,44 @@ body.theme-dark {
   --accent-color: #66aaff;
 }
 
+body.theme-blue {
+  --bg-color: #0b1220;
+  --text-color: #e6eef8;
+  --card-color: #111c2e;
+  --border-color: #2d4263;
+  --accent-color: #7ab8ff;
+}
+
+body.theme-beige {
+  --bg-color: #f4ead8;
+  --text-color: #2f2418;
+  --card-color: #fff7e8;
+  --border-color: #c8ad88;
+  --accent-color: #7a4f2a;
+}
+
+body.theme-blue .button {
+  background-color: #3b82f6;
+  border-color: #7ab8ff;
+  color: #ffffff;
+}
+
+body.theme-blue .button.secondary {
+  background-color: transparent;
+  color: #7ab8ff;
+}
+
+body.theme-beige .button {
+  background-color: #7a4f2a;
+  border-color: #7a4f2a;
+  color: #fff7e8;
+}
+
+body.theme-beige .button.secondary {
+  background-color: transparent;
+  color: #7a4f2a;
+}
+
 * {
   box-sizing: border-box;
 }

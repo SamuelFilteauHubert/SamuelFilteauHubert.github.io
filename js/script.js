@@ -12,6 +12,12 @@ const translations = {
     "nav.skills": "Skills",
     "nav.contact": "Contact",
 
+    "theme.basic": "Basic",
+    "theme.light": "Light",
+    "theme.dark": "Dark",
+    "theme.blue": "Blue",
+    "theme.beige": "Beige",
+
     "home.title": "Who am I?",
     "home.intro": "I am a student interested in web development, programming, databases, and interactive projects.",
     "home.viewWork": "View my work",
@@ -188,6 +194,12 @@ const translations = {
     "nav.skills": "Compétences",
     "nav.contact": "Contact",
 
+    "theme.basic": "Basique",
+    "theme.light": "Clair",
+    "theme.dark": "Sombre",
+    "theme.blue": "Bleu",
+    "theme.beige": "Beige",
+
     "home.title": "Qui suis-je?",
     "home.intro": "Je suis un étudiant intéressé par le développement web, la programmation, les bases de données et les projets interactifs.",
     "home.viewWork": "Voir mes projets",
@@ -356,7 +368,7 @@ const translations = {
 };
 
 function applyTheme(theme) {
-  document.body.classList.remove("theme-basic", "theme-light", "theme-dark");
+  document.body.classList.remove("theme-basic", "theme-light", "theme-dark", "theme-blue", "theme-beige");
   document.body.classList.add(`theme-${theme}`);
 }
 
