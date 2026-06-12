@@ -645,5 +645,50 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeCvModal();
     closeEmailModal();
+
+    if (typeof closeImageModal === "function") {
+      closeImageModal();
+    }
+  }
+});
+
+const expandableImages = document.querySelectorAll(".expandable-image");
+
+const imageModal = document.createElement("div");
+imageModal.classList.add("image-modal");
+imageModal.setAttribute("aria-hidden", "true");
+
+imageModal.innerHTML = `
+  <button type="button" class="image-modal-close" aria-label="Close">×</button>
+  <img src="" alt="" class="image-modal-img" />
+`;
+
+document.body.appendChild(imageModal);
+
+const imageModalImg = imageModal.querySelector(".image-modal-img");
+const imageModalClose = imageModal.querySelector(".image-modal-close");
+
+expandableImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    imageModalImg.src = image.src;
+    imageModalImg.alt = image.alt;
+
+    imageModal.classList.add("open");
+    imageModal.setAttribute("aria-hidden", "false");
+  });
+});
+
+function closeImageModal() {
+  imageModal.classList.remove("open");
+  imageModal.setAttribute("aria-hidden", "true");
+  imageModalImg.src = "";
+  imageModalImg.alt = "";
+}
+
+imageModalClose.addEventListener("click", closeImageModal);
+
+imageModal.addEventListener("click", (event) => {
+  if (event.target === imageModal) {
+    closeImageModal();
   }
 });
